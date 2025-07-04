@@ -570,6 +570,30 @@ video {
   display: grid;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[300\] {
+  height: 300;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[40\] {
+  height: 40;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -588,6 +612,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-2 {
@@ -726,6 +754,20 @@ video {
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.\[eM\:0V\FFFDV\FFFD\FFFD D\3W7m\FFFD\1A 6N\FFFD\FFFD\5E9\FFFDn\FFFD\FFFD-\7F\FFFD\FFFDN\1Cn\FFFD\FFFD\FFFDU\309\$\FFFDZP\1D\FFFD fO\FFFD\FFFDv\11\FFFD\FFFD\FFFDxaR\11v\=\FFFD\2\795\6\FFFD\%\FFFDG\FFFD\2 C\\\FFFD\10\2\2\FFFD\23Bpb\98\16l\FFFD\FFFD 5\FFFD_\13\2 F\FFFD 4\FFFD\FFFDke\FFFDT7\FFFD\FFFD\.\14\FFFD 1m\FFFD\%w\10 f\1D b\0\>\] {
+  e-m: 0V�V��DW7m�6N��ש�n��-��Nn���Ủ$�ZP�fO��v���xaRv=�ޕ�%�G�C\��Ȼpbl��5� F�4��ke�T7��.�1m�%wfb >;
+}
+
+.\[g\:\FFFD\FFFD\] {
+  g: ��;
+}
+
 @media (max-width: 768px) 
 {
   main {
@@ -738,9 +780,35 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
 }
 
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-screen {
+    width: 100vw;
+  }
+
+  .lg\:w-1 {
+    width: 0.25rem;
   }
 
   .lg\:grid-cols-3 {
