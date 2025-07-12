@@ -1,0 +1,17 @@
+@mixin margins($margin-left, $margin-right, $HTML-tag){
+    @if $HTML-tag == body {
+        margin-left: $margin-left;
+        margin-right: $margin-right;
+    } @else if $HTML-tag == div {
+        margin-left: $margin-left;
+        margin-right: $margin-right;
+    }
+}
+
+body {
+    @include margins(10px, 10px, body);
+}
+
+div {
+    @include margins(15px, 15px, div);
+}
