@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# 0-installation-script: SASS Installation Steps
+
+# This script documents the steps taken to install and set up SASS based on the project requirements.
+
+# 1. Project Directory Setup (Assumed completed before running this script)
+#    cd alx-intermediate-frontend
+#    mkdir 0x03-sass_scss
+#    cd 0x03-sass_scss
+
+# 2. Node.js Installation (Optional, only if Node.js is not already installed)
+#    If Node.js v20.16 was required and not present, the following steps were taken:
+#    echo "Installing Node.js v20.16 using NVM..."
+#    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+#    (Note: A terminal restart is necessary after NVM installation. Use 'exit' and reopen.)
+
+# 3. SASS Installation via npm
+#    Assuming Node.js is installed and the terminal is functional, SASS is installed using npm.
+#    The specific version 3.7.4 was requested in the instructions.
+
+echo "Installing SASS via npm..."
+# Note: npm uses @ for specific versions (e.g., package@version).
+npm install sass@3.7.4
+
+# 4. Verify SASS Installation
+#    Check if the sass command is available and confirm the installed version.
+
+# This step attempts to run a command typically used for global installation verification.
+# If 'npm install' was used without '-g', the executable is usually in node_modules/.bin/sass
+echo "Verifying SASS installation..."
+# If installed locally:
+# ./node_modules/.bin/sass --version
+
+# If installed globally (recommended for command line usage):
+# sass --version
+
+echo "SASS installation steps documented."
